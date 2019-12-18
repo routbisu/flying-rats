@@ -1,0 +1,14 @@
+@import '../../../scss/';
+
+.select-container {
+  select {
+    cursor: pointer;
+    border: 1px solid $grey-border;
+    padding: 7px 10px;
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: $primary-color;
+  }
+}

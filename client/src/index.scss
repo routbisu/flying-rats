@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import './scss/';
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $very-light-grey-bg;
+  font-size: 15px;
+}
+
+.main-container {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .rat-form-container {
+    background: $white;
+    border: 1px solid $grey-border;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 15px;
+
+    h2 {
+      color: $primary-color;
+      font-weight: 600;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .rat-form {
+      display: flex;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+
+      .rat-details {
+        padding: 0px 15px;
+      }
+    }
+  }
+}
